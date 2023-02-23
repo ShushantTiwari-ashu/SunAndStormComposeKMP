@@ -21,12 +21,12 @@
 
 /* Begin PBXBuildFile section */
 		7486908508A6AEB50CBBD525FC175551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		AF233B67F52640B53B6B3B052424996B /* Pods-cleanmilesIos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A64E142E9F1BE25F43392A4FBFB33A8 /* Pods-cleanmilesIos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F06F0271B3622E58E42400CEBA9F30C3 /* Pods-cleanmilesIos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF18AF094EF6B0A9E6A27F80E17EA64 /* Pods-cleanmilesIos-dummy.m */; };
+		AF233B67F52640B53B6B3B052424996B /* Pods-cleanmilesIos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73947A18E2CFE87353F385D8F590AD69 /* Pods-cleanmilesIos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06F0271B3622E58E42400CEBA9F30C3 /* Pods-cleanmilesIos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F688071DE6F2516F97A23B8D363ECB3 /* Pods-cleanmilesIos-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4F04B4F1FF9506038BD6BFE362074258 /* PBXContainerItemProxy */ = {
+		76565F679C0323FB7B6F5F397EFD9F5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,22 +36,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A64E142E9F1BE25F43392A4FBFB33A8 /* Pods-cleanmilesIos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cleanmilesIos-umbrella.h"; sourceTree = "<group>"; };
-		1A7A1C18FA2171EACE09443151673A4A /* Pods-cleanmilesIos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cleanmilesIos-acknowledgements.plist"; sourceTree = "<group>"; };
-		1E86323FC6F70AC1333204AC008189EA /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		20451799589A4C64347FEDEA95BF0526 /* Pods-cleanmilesIos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cleanmilesIos-frameworks.sh"; sourceTree = "<group>"; };
-		31F81A01DF03851B544D003B71CC6617 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		441F9E9CB5AA2BE9F8D6F37675588DB7 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
-		70BE3C3E9D108AA71D306F439AF88FC6 /* Pods-cleanmilesIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cleanmilesIos.debug.xcconfig"; sourceTree = "<group>"; };
+		2CC927167A32714748243068CF1E7036 /* Pods-cleanmilesIos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-cleanmilesIos.modulemap"; sourceTree = "<group>"; };
+		3221F29A94A363E3B75555CF78BF9BF2 /* Pods-cleanmilesIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cleanmilesIos.debug.xcconfig"; sourceTree = "<group>"; };
+		4593A8399182611DA619A564B8AF453D /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
+		5DB2BC571D577615EB0033F766191FE0 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73947A18E2CFE87353F385D8F590AD69 /* Pods-cleanmilesIos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cleanmilesIos-umbrella.h"; sourceTree = "<group>"; };
 		747F6AA6B8D21008AB761C59540214B9 /* Pods-cleanmilesIos */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-cleanmilesIos"; path = Pods_cleanmilesIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E6CDA36C933E1A2D1B6CFF3B8D4A37 /* Pods-cleanmilesIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cleanmilesIos.release.xcconfig"; sourceTree = "<group>"; };
+		8ED3ADAF467068B201CD2EB13D21000B /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8F688071DE6F2516F97A23B8D363ECB3 /* Pods-cleanmilesIos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cleanmilesIos-dummy.m"; sourceTree = "<group>"; };
+		95F4AB8F1B8787EEC38E2233B605F50D /* Pods-cleanmilesIos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cleanmilesIos-resources.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5E0D5F3BFD5839D2E2F87790296D5E4 /* Pods-cleanmilesIos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cleanmilesIos-Info.plist"; sourceTree = "<group>"; };
-		AF8CA345980DCB3BFB7333DCE8980173 /* Pods-cleanmilesIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cleanmilesIos.release.xcconfig"; sourceTree = "<group>"; };
-		DEF18AF094EF6B0A9E6A27F80E17EA64 /* Pods-cleanmilesIos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cleanmilesIos-dummy.m"; sourceTree = "<group>"; };
-		E6127148DC6D0639F5D3C7AB9E66ACA3 /* Pods-cleanmilesIos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cleanmilesIos-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E919EC35B423858FC9443D0FEBFD92AB /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
-		FD82D1F3F84CD9EBBE29E30900A8CDB6 /* Pods-cleanmilesIos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-cleanmilesIos.modulemap"; sourceTree = "<group>"; };
+		A10FCB8D1D0DE47CB100F1E6B094C5FE /* partly_cloudy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = partly_cloudy.png; path = src/commonMain/resources/partly_cloudy.png; sourceTree = "<group>"; };
+		C16236C96FF88B1F3AC586BC48C9D21F /* Pods-cleanmilesIos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cleanmilesIos-acknowledgements.plist"; sourceTree = "<group>"; };
+		DADBF1C405F603B02ECE772DD25C341C /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
+		E195B7B8D925602ADED81FE14348D801 /* Pods-cleanmilesIos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cleanmilesIos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA72298E4D5C9C8AEB8A4B77AD021B6A /* Pods-cleanmilesIos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cleanmilesIos-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,39 +67,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07D24D806F432019A41558F6BBC076D2 /* shared */ = {
+		04F0B4B9B3407404BB76C1A59B260325 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D09799E4A6827D82EAC3A2BDCA4715CD /* Frameworks */,
-				4DD872CFF8FE0E7C0C64FA76B6E7DA71 /* Pod */,
-				0994AF0995390B03E4323E991360D24B /* Support Files */,
-			);
-			name = shared;
-			path = ../../shared;
-			sourceTree = "<group>";
-		};
-		0994AF0995390B03E4323E991360D24B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				441F9E9CB5AA2BE9F8D6F37675588DB7 /* shared.debug.xcconfig */,
-				1E86323FC6F70AC1333204AC008189EA /* shared.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../cleanmilesIos/Pods/Target Support Files/shared";
-			sourceTree = "<group>";
-		};
-		313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				07D24D806F432019A41558F6BBC076D2 /* shared */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4DD872CFF8FE0E7C0C64FA76B6E7DA71 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				31F81A01DF03851B544D003B71CC6617 /* shared.podspec */,
+				8ED3ADAF467068B201CD2EB13D21000B /* shared.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -111,29 +83,50 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7C060E65ADBA3DEA361B505D0E9CAFC6 /* Pods-cleanmilesIos */ = {
+		58AAD176B64323B9974E5B70EC8B12DC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FD82D1F3F84CD9EBBE29E30900A8CDB6 /* Pods-cleanmilesIos.modulemap */,
-				E6127148DC6D0639F5D3C7AB9E66ACA3 /* Pods-cleanmilesIos-acknowledgements.markdown */,
-				1A7A1C18FA2171EACE09443151673A4A /* Pods-cleanmilesIos-acknowledgements.plist */,
-				DEF18AF094EF6B0A9E6A27F80E17EA64 /* Pods-cleanmilesIos-dummy.m */,
-				20451799589A4C64347FEDEA95BF0526 /* Pods-cleanmilesIos-frameworks.sh */,
-				A5E0D5F3BFD5839D2E2F87790296D5E4 /* Pods-cleanmilesIos-Info.plist */,
-				1A64E142E9F1BE25F43392A4FBFB33A8 /* Pods-cleanmilesIos-umbrella.h */,
-				70BE3C3E9D108AA71D306F439AF88FC6 /* Pods-cleanmilesIos.debug.xcconfig */,
-				AF8CA345980DCB3BFB7333DCE8980173 /* Pods-cleanmilesIos.release.xcconfig */,
+				5C41D9892383A4971398096752915324 /* shared */,
 			);
-			name = "Pods-cleanmilesIos";
-			path = "Target Support Files/Pods-cleanmilesIos";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5C41D9892383A4971398096752915324 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				A10FCB8D1D0DE47CB100F1E6B094C5FE /* partly_cloudy.png */,
+				8D1B6AA4C0194EE62C3E1D70CAE151B8 /* Frameworks */,
+				04F0B4B9B3407404BB76C1A59B260325 /* Pod */,
+				C5B9607E1CCC22B49C839B70CE11544A /* Support Files */,
+			);
+			name = shared;
+			path = ../../shared;
+			sourceTree = "<group>";
+		};
+		8D1B6AA4C0194EE62C3E1D70CAE151B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DADBF1C405F603B02ECE772DD25C341C /* shared.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9FF562F4405C006A340D9F354940E87D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C060E65ADBA3DEA361B505D0E9CAFC6 /* Pods-cleanmilesIos */,
+				D783953E16844508749F89430ED96BA8 /* Pods-cleanmilesIos */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C5B9607E1CCC22B49C839B70CE11544A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4593A8399182611DA619A564B8AF453D /* shared.debug.xcconfig */,
+				5DB2BC571D577615EB0033F766191FE0 /* shared.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../cleanmilesIos/Pods/Target Support Files/shared";
 			sourceTree = "<group>";
 		};
 		CB7B9D5EEC96A808B17618E497657303 /* Products */ = {
@@ -148,19 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */,
+				58AAD176B64323B9974E5B70EC8B12DC /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				CB7B9D5EEC96A808B17618E497657303 /* Products */,
 				9FF562F4405C006A340D9F354940E87D /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D09799E4A6827D82EAC3A2BDCA4715CD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E919EC35B423858FC9443D0FEBFD92AB /* shared.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -169,6 +154,23 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D783953E16844508749F89430ED96BA8 /* Pods-cleanmilesIos */ = {
+			isa = PBXGroup;
+			children = (
+				2CC927167A32714748243068CF1E7036 /* Pods-cleanmilesIos.modulemap */,
+				E195B7B8D925602ADED81FE14348D801 /* Pods-cleanmilesIos-acknowledgements.markdown */,
+				C16236C96FF88B1F3AC586BC48C9D21F /* Pods-cleanmilesIos-acknowledgements.plist */,
+				8F688071DE6F2516F97A23B8D363ECB3 /* Pods-cleanmilesIos-dummy.m */,
+				FA72298E4D5C9C8AEB8A4B77AD021B6A /* Pods-cleanmilesIos-Info.plist */,
+				95F4AB8F1B8787EEC38E2233B605F50D /* Pods-cleanmilesIos-resources.sh */,
+				73947A18E2CFE87353F385D8F590AD69 /* Pods-cleanmilesIos-umbrella.h */,
+				3221F29A94A363E3B75555CF78BF9BF2 /* Pods-cleanmilesIos.debug.xcconfig */,
+				87E6CDA36C933E1A2D1B6CFF3B8D4A37 /* Pods-cleanmilesIos.release.xcconfig */,
+			);
+			name = "Pods-cleanmilesIos";
+			path = "Target Support Files/Pods-cleanmilesIos";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +199,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1B12B00F6FA96C8BBC2399B32C21E4E4 /* PBXTargetDependency */,
+				8B72516191A49665AD433E2279EBA1F1 /* PBXTargetDependency */,
 			);
 			name = "Pods-cleanmilesIos";
 			productName = Pods_cleanmilesIos;
@@ -267,18 +269,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1B12B00F6FA96C8BBC2399B32C21E4E4 /* PBXTargetDependency */ = {
+		8B72516191A49665AD433E2279EBA1F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = 4F04B4F1FF9506038BD6BFE362074258 /* PBXContainerItemProxy */;
+			targetProxy = 76565F679C0323FB7B6F5F397EFD9F5F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		27E9609BB6FEB3D98AC297415D73EE7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E86323FC6F70AC1333204AC008189EA /* shared.release.xcconfig */;
+			baseConfigurationReference = 5DB2BC571D577615EB0033F766191FE0 /* shared.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,7 +298,7 @@
 		};
 		3ACFA9CFDD1D580CE856D95A5559E4F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF8CA345980DCB3BFB7333DCE8980173 /* Pods-cleanmilesIos.release.xcconfig */;
+			baseConfigurationReference = 87E6CDA36C933E1A2D1B6CFF3B8D4A37 /* Pods-cleanmilesIos.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -462,7 +464,7 @@
 		};
 		B25A1C2429B15FBB86AA4312053B69E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 441F9E9CB5AA2BE9F8D6F37675588DB7 /* shared.debug.xcconfig */;
+			baseConfigurationReference = 4593A8399182611DA619A564B8AF453D /* shared.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,7 +481,7 @@
 		};
 		B4658FBECF3D310F92CF7B4769BD57F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70BE3C3E9D108AA71D306F439AF88FC6 /* Pods-cleanmilesIos.debug.xcconfig */;
+			baseConfigurationReference = 3221F29A94A363E3B75555CF78BF9BF2 /* Pods-cleanmilesIos.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;

@@ -1,6 +1,6 @@
 [versions]
 plugin-android = "7.4.1"
-plugin-kotlin = "1.8.10"
+plugin-kotlin = "1.8.0"
 plugin-gver = "0.45.0"
 
 androidx-compose-compiler = "1.4.2"
@@ -80,6 +80,8 @@ compose-navigation = { module = "androidx.navigation:navigation-compose", versio
 compose-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "2.5.1" }
 compose-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-compose", version = "2.6.0-alpha04" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+compose-resource = { module = "org.jetbrains.compose.components:components-resources", version = "1.4.0-alpha01-dev947" }
+imageloader = { module = "io.github.qdsfdhvh:image-loader", version = "1.2.8" }
 
 accompanist-insets = { module = "com.google.accompanist:accompanist-insets", version.ref = "accompanist" }
 accompanist-insets-ui = { module = "com.google.accompanist:accompanist-insets-ui", version.ref = "accompanist" }

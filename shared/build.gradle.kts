@@ -6,20 +6,16 @@ plugins {
     id("com.android.library")
     id("kotlinx-serialization")
     id("com.google.devtools.ksp")
+    id("org.jetbrains.compose")
     id("com.rickclephas.kmp.nativecoroutines")
 }
 
 kotlin {
-    android {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "1.8"
-            }
-        }
-    }
+    android()
     iosX64()
     iosArm64()
     iosSimulatorArm64()
+    jvm("desktop")
 
     cocoapods {
         summary = "Some description for the Shared Module"
@@ -29,8 +25,12 @@ kotlin {
         podfile = project.file("../cleanmilesIos/Podfile")
         framework {
             baseName = "shared"
+            isStatic = true
         }
+        extraSpecAttributes["resources"] =
+            "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
     }
+
 
     sourceSets {
         val commonMain by getting {
@@ -43,6 +43,7 @@ kotlin {
                     implementation(content.negotiation)
                     implementation(json)
                 }
+
                 with(libs.kotlinx) {
                     implementation(coroutines.core)
                     implementation(serialization.core)
@@ -51,6 +52,11 @@ kotlin {
 
                 api(libs.multiplatform.settings)
                 api(libs.multiplatform.settings.coroutines)
+                api(libs.compose.resource)
+                api(libs.imageloader)
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material)
             }
         }
         val commonTest by getting {
@@ -74,6 +80,7 @@ kotlin {
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
                 implementation(libs.ktor.client.ios1)
+                implementation(libs.ktor.client.ios)
             }
         }
         val iosX64Test by getting
@@ -85,12 +92,23 @@ kotlin {
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
         }
+
+        val desktopMain by getting {
+            dependencies {
+                implementation(compose.desktop.common)
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.6.4")
+                implementation("io.ktor:ktor-client-cio:2.2.3")
+            }
+        }
     }
 }
 
 android {
-    namespace = "dev.shushant.cleanmiles"
     compileSdk = 33
+    namespace = "dev.shushant.cleanmiles"
+    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
+    sourceSets["main"].res.srcDirs("src/androidMain/res")
+    sourceSets["main"].resources.srcDir("src/commonMain/resources")
     defaultConfig {
         minSdk = 24
         targetSdk = 33

@@ -104,7 +104,7 @@
 				7555FF77242A565900829871 /* Sources */,
 				7555FF79242A565900829871 /* Resources */,
 				BD5CB40D351913FF809CB123 /* Frameworks */,
-				EF3E7F6968D5514F1B839E5D /* [CP] Embed Pods Frameworks */,
+				E6EE7313E4343F48F1A9A74A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,21 +161,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EF3E7F6968D5514F1B839E5D /* [CP] Embed Pods Frameworks */ = {
+		E6EE7313E4343F48F1A9A74A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cleanmilesIos/Pods-cleanmilesIos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-cleanmilesIos/Pods-cleanmilesIos-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cleanmilesIos/Pods-cleanmilesIos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-cleanmilesIos/Pods-cleanmilesIos-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cleanmilesIos/Pods-cleanmilesIos-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cleanmilesIos/Pods-cleanmilesIos-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F36192F25C137D4D749E24BB /* [CP] Check Pods Manifest.lock */ = {

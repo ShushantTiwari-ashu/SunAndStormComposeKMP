@@ -6,6 +6,7 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
         maven(url = "https://jitpack.io")
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
@@ -15,9 +16,11 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven(url = "https://jitpack.io")
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
-rootProject.name = "Sun and Storm"
-include(":sunAndStormAndroid")
+rootProject.name = "SunAndStorm"
+include(":androidApp")
+include(":desktopAoo")
 include(":shared")
