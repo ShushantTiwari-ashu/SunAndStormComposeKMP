@@ -1,24 +1,19 @@
 package dev.shushant.cleanmiles
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import dev.shushant.cleanmiles.style.SunAndStormAppColor
+import dev.shushant.cleanmiles.style.AppTypography
+import dev.shushant.cleanmiles.style.DarkColorScheme
+import dev.shushant.cleanmiles.style.LightColorScheme
 
 @Composable
-internal fun AppTheme(content: @Composable () -> Unit) {
+internal fun AppTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit,
+) {
+    val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
     MaterialTheme(
-        colorScheme = MaterialTheme.colorScheme.copy(
-            primary = SunAndStormAppColor.Primary,
-            secondary = SunAndStormAppColor.Secondary,
-            background = SunAndStormAppColor.DarkGray,
-            surface = SunAndStormAppColor.Gray,
-            onPrimary = SunAndStormAppColor.Primary,
-            onSecondary = Color.Black,
-            onBackground = SunAndStormAppColor.Primary,
-            onSurface = SunAndStormAppColor.Primary
-        )
-    ) {
-        content()
-    }
+        colorScheme = colorScheme, content = content, typography = AppTypography
+    )
 }
