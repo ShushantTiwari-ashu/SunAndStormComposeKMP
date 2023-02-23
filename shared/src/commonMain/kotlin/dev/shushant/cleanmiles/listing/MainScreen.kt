@@ -8,6 +8,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -154,12 +155,12 @@ internal fun WeatherView() {
         )
         Column(Modifier.padding(start = 8.dp)) {
             Text(
-                "Friday, April 15", style = MaterialTheme.typography.caption.copy(
+                "Friday, April 15", style = MaterialTheme.typography.bodySmall.copy(
                     color = Color.White, fontWeight = FontWeight.Normal
                 )
             )
             Text(
-                "Sunny 32°C", style = MaterialTheme.typography.body2.copy(
+                "Sunny 32°C", style = MaterialTheme.typography.bodyMedium.copy(
                     color = Color.White, fontWeight = FontWeight.Bold
                 )
             )
@@ -181,7 +182,7 @@ private fun ListCountryChips(
 }
 
 
-@OptIn(ExperimentalMaterialApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun CountryChips(name: String, isSelected: Boolean, onItemSelected: (String) -> Unit) {
     Surface(modifier = Modifier.background(Color.Transparent).height(36.dp),
@@ -195,14 +196,14 @@ private fun CountryChips(name: String, isSelected: Boolean, onItemSelected: (Str
         onClick = { onItemSelected(name) }) {
         Text(
             name,
-            style = MaterialTheme.typography.body1.copy(color = Color.Black),
+            style = MaterialTheme.typography.bodySmall.copy(color = Color.Black),
             modifier = Modifier.padding(start = 24.dp, top = 8.dp, bottom = 8.dp, end = 24.dp)
                 .background(Color.Transparent),
         )
     }
 }
 
-@OptIn(ExperimentalUnitApi::class, ExperimentalMaterialApi::class)
+@OptIn(ExperimentalUnitApi::class)
 @Composable
 internal fun ImageSlider(
     imagesList: List<TouristPlace>,
@@ -220,13 +221,13 @@ internal fun ImageSlider(
         items(items = imagesList) { touristPlace ->
             val painter = rememberAsyncImagePainter(touristPlace.images.first())
             Card(
-                elevation = 16.dp,
+                elevation = CardDefaults.cardElevation(defaultElevation = 16.dp),
                 modifier = Modifier
                     .widthIn(min = 200.dp, max = 500.dp)
                     .aspectRatio(ratio = (295.0 / 432.0).toFloat())
                     .width(width = (width * 0.8).dp)
                     .clip(RoundedCornerShape(20.dp)),
-                contentColor = Color.Transparent,
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
             ) {
                 Box {
                     Image(
@@ -242,13 +243,13 @@ internal fun ImageSlider(
                         modifier = Modifier.padding(16.dp).align(Alignment.BottomStart)
                     ) {
                         Text(
-                            text = touristPlace.name, style = MaterialTheme.typography.h4.copy(
+                            text = touristPlace.name, style = MaterialTheme.typography.headlineLarge.copy(
                                 color = Color.White, fontWeight = FontWeight.Medium
                             )
                         )
                         Text(
                             text = touristPlace.shortDescription,
-                            style = MaterialTheme.typography.caption.copy(
+                            style = MaterialTheme.typography.displayMedium.copy(
                                 color = Color.White,
                                 letterSpacing = TextUnit(0.1f, TextUnitType.Em),
                                 lineHeight = TextUnit(19f, TextUnitType.Sp)
@@ -264,7 +265,7 @@ internal fun ImageSlider(
                                     )
                                 }),
                                 text = "Discover Place",
-                                style = MaterialTheme.typography.subtitle2.copy(
+                                style = MaterialTheme.typography.displayMedium.copy(
                                     textDecoration = TextDecoration.Underline,
                                     color = Color.White,
                                     fontWeight = FontWeight.SemiBold
@@ -295,7 +296,7 @@ internal fun Counter(destinationsSize: Int, selectedDestination: Int, onItemSwip
         Row(horizontalArrangement = Arrangement.Center) {
             Text(
                 (selectedDestination + 1).toString(),
-                style = MaterialTheme.typography.subtitle2.copy(
+                style = MaterialTheme.typography.displayMedium.copy(
                     color = Color.White, fontSize = TextUnit(
                         24f, TextUnitType.Sp
                     )
@@ -304,7 +305,7 @@ internal fun Counter(destinationsSize: Int, selectedDestination: Int, onItemSwip
             )
             Text(
                 "/$destinationsSize",
-                style = MaterialTheme.typography.subtitle2.copy(color = Color.White),
+                style = MaterialTheme.typography.displayMedium.copy(color = Color.White),
                 modifier = Modifier.align(Alignment.Bottom)
             )
         }
@@ -348,7 +349,7 @@ internal fun VisitingPlacesList(list: List<String>, name: String) {
         items(list) {
             Text(
                 it,
-                style = MaterialTheme.typography.body1.copy(
+                style = MaterialTheme.typography.bodySmall.copy(
                     color = if (it == name) Color.White else Color.White.copy(
                         alpha = 0.7f
                     ), fontWeight = if (it == name) FontWeight.SemiBold else FontWeight.Normal

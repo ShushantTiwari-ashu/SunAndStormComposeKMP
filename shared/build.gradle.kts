@@ -31,7 +31,7 @@ kotlin {
             "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
     }
 
-
+    @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -56,7 +56,7 @@ kotlin {
                 api(libs.imageloader)
                 implementation(compose.runtime)
                 implementation(compose.foundation)
-                implementation(compose.material)
+                implementation(compose.material3)
             }
         }
         val commonTest by getting {

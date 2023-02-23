@@ -9,6 +9,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Alignment
@@ -53,10 +54,10 @@ internal fun DetailScreen(navigationState: MutableState<ScreensState>, touristPl
                 colorFilter = ColorFilter.tint(color = Color.White),
             )
             Card(
-                elevation = 16.dp,
+                elevation = CardDefaults.cardElevation(defaultElevation = 16.dp),
                 modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp)
                     .aspectRatio(ratio = 335f / 280f).clip(RoundedCornerShape(15.dp)),
-                contentColor = Color.Transparent,
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
             ) {
                 Box {
                     Image(
@@ -69,13 +70,13 @@ internal fun DetailScreen(navigationState: MutableState<ScreensState>, touristPl
             }
             PlaceInfo()
             Text(
-                text = touristPlace.name, style = MaterialTheme.typography.h5.copy(
+                text = touristPlace.name, style = MaterialTheme.typography.headlineLarge.copy(
                     fontWeight = FontWeight.Medium, color = Color.White
                 ), modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp)
             )
             Text(
                 text = touristPlace.longDescription,
-                style = MaterialTheme.typography.subtitle2.copy(
+                style = MaterialTheme.typography.bodyMedium.copy(
                     color = Color.White,
                     fontWeight = FontWeight.Normal,
                     letterSpacing = TextUnit(0.1f, TextUnitType.Em),
@@ -84,7 +85,7 @@ internal fun DetailScreen(navigationState: MutableState<ScreensState>, touristPl
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 10.dp)
             )
             Text(
-                text = "Photos", style = MaterialTheme.typography.subtitle1.copy(
+                text = "Photos", style = MaterialTheme.typography.bodySmall.copy(
                     fontWeight = FontWeight.Medium, color = Color.White
                 ), modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp)
             )
@@ -118,19 +119,18 @@ internal fun IconWithText() {
             text = "4.8",
             modifier = Modifier.weight(1f, false).padding(top = 5.dp)
                 .align(Alignment.CenterHorizontally),
-            style = MaterialTheme.typography.subtitle1.copy(Color.White),
+            style = MaterialTheme.typography.bodyMedium.copy(Color.White),
             fontWeight = FontWeight.Medium,
         )
         Text(
             text = "2,500 rvs",
             modifier = Modifier.weight(1f, false).padding(top = 5.dp)
                 .align(Alignment.CenterHorizontally),
-            style = MaterialTheme.typography.caption.copy(color = Color.White),
+            style = MaterialTheme.typography.bodySmall.copy(color = Color.White),
         )
     }
 }
 
-@OptIn(ExperimentalMaterialApi::class)
 @Composable
 internal fun ImageGallery(imagesList: List<String>, onDetailsClicked: (Unit) -> Unit) {
     LazyRow(
@@ -141,10 +141,10 @@ internal fun ImageGallery(imagesList: List<String>, onDetailsClicked: (Unit) -> 
         items(items = imagesList) { imageUrl ->
             val painter = rememberAsyncImagePainter(imageUrl)
             Card(
-                elevation = 16.dp,
+                elevation = CardDefaults.cardElevation(defaultElevation = 16.dp),
                 modifier = Modifier.height(210.dp).aspectRatio(ratio = (139.0 / 210.0).toFloat())
                     .clip(RoundedCornerShape(16.dp)),
-                contentColor = Color.Transparent,
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
             ) {
                 Box {
                     Image(
